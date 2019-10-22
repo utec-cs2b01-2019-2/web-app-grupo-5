@@ -1,4 +1,4 @@
-# Nombre del grupo
+# Grupo 5
 
 ## Breve descrición del proyecto
 
@@ -6,6 +6,6 @@
 
 |   | No. Alumno | Apellidos | Nombre | Usuario Github | % participación |
 | --- | --- | --- | --- | --- | --- |
-|  1 |  |  |  |  |  |
-|  2 |  |  |  |  |  |
-|  3 |  |  |  |  |  |
+|  1 |Merma Silva  | Carlos Antonio | CarlosMerma |  |  |
+|  2 | Boza Martin| Adrian  |  |  |  |
+|  3 |  |  Remy|  |  |  |
