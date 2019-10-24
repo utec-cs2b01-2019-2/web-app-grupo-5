@@ -1,4 +1,4 @@
-
+@import "compass/css3";
 
 /*
 I wanted to go with a mobile first approach, but it actually lead to more verbose CSS in this case, so I've gone web first. Can't always force things...
@@ -9,64 +9,44 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 /* Global settings */
 $color-border: #eee;
 $color-label: #aaa;
-$font-default: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-  Helvetica, Arial, sans-serif;
-$font-bold: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+$font-default: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-bold: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+
 
 /* Global "table" column settings */
-.product-image {
-  float: left;
-  width: 20%;
-}
-.product-details {
-  float: left;
-  width: 37%;
-}
-.product-price {
-  float: left;
-  width: 12%;
-}
-.product-quantity {
-  float: left;
-  width: 10%;
-}
-.product-removal {
-  float: left;
-  width: 9%;
-}
-.product-line-price {
-  float: left;
-  width: 12%;
-  text-align: right;
-}
+.product-image { float: left; width: 20%; }
+.product-details { float: left; width: 37%; }
+.product-price { float: left; width: 12%; }
+.product-quantity { float: left; width: 10%; }
+.product-removal { float: left; width: 9%; }
+.product-line-price { float: left; width: 12%; text-align: right; }
+
 
 /* This is used as the traditional .clearfix class */
 .group:before,
 .group:after {
-  content: "";
-  display: table;
+    content: '';
+    display: table;
 }
 .group:after {
-  clear: both;
+    clear: both;
 }
 .group {
-  zoom: 1;
+    zoom: 1;
 }
 
+
 /* Apply clearfix in a few places */
-.shopping-cart,
-.column-labels,
-.product,
-.totals-item {
+.shopping-cart, .column-labels, .product, .totals-item {
   @extend .group;
 }
 
+
 /* Apply dollar signs */
-.product .product-price:before,
-.product .product-line-price:before,
-.totals-value:before {
-  content: "$";
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: '$';
 }
+
 
 /* Body/Header stuff */
 body {
@@ -87,6 +67,7 @@ label {
   margin-top: -45px;
 }
 
+
 /* Column headers */
 .column-labels {
   label {
@@ -95,12 +76,11 @@ label {
     border-bottom: 1px solid $color-border;
   }
 
-  .product-image,
-  .product-details,
-  .product-removal {
+  .product-image, .product-details, .product-removal {
     text-indent: -9999px;
   }
 }
+
 
 /* Product entries */
 .product {
@@ -129,6 +109,7 @@ label {
   .product-quantity {
     input {
       width: 40px;
+
     }
   }
 
@@ -146,6 +127,7 @@ label {
     background-color: #a44;
   }
 }
+
 
 /* Totals section */
 .totals {
@@ -191,6 +173,7 @@ label {
 
 /* Make adjustments for tablet */
 @media screen and (max-width: 650px) {
+
   .shopping-cart {
     margin: 0;
     padding-top: 20px;
@@ -228,7 +211,7 @@ label {
   }
 
   .product-quantity:before {
-    content: "x";
+    content: 'x';
   }
 
   .product-removal {
@@ -239,10 +222,13 @@ label {
     float: right;
     width: 70px;
   }
+
 }
+
 
 /* Make more adjustments for phone */
 @media screen and (max-width: 350px) {
+
   .product-removal {
     float: right;
   }
@@ -255,7 +241,7 @@ label {
   }
 
   .product .product-line-price:before {
-    content: "Item Total: $";
+    content: 'Item Total: $';
   }
 
   .totals {
