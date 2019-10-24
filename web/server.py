@@ -44,6 +44,10 @@ def create_user():
 def  register_user2():
     return render_template("register.html " )
 
+@app.route("/shop", methods =["GET"])
+def shop_user():
+    return render_template("shop.html")
+
 @app.route("/register", methods =["POST"])
 def  register_user():
     c = json.loads(request.form["value"])
