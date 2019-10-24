@@ -18,6 +18,10 @@ def index():
 def login():
     return render_template('login.html')
 
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
+
 @app.route('/static/<content>')
 def static_content(content):
     return render_template(content)
