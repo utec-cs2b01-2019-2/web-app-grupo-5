@@ -36,6 +36,24 @@ def create_user():
     session.commit()
     return 'Created User'
 
+@app.route("/register", methods =["GET"])
+def  register_user2():
+    return render_template("register.html " )
+
+@app.route("/register", methods =["POST"])
+def  register_user():
+    c = json.loads(request.form["value"])
+    user = entities.User(
+        username=c["username"],
+        name=c["name"],
+        fullname=c["full name"],
+        password=c["password"]
+    )
+    session = db.getSessin(engine)
+    session.add(user)
+    session.comit()
+    return render_template("register.html")
+
 @app.route('/users/<id>', methods = ['GET'])
 def get_user(id):
     db_session = db.getSession(engine)
@@ -213,6 +231,7 @@ def current_user():
 def logout():
     session.clear()
     return render_template('login.html')
+
 
 if __name__ == '__main__':
     app.secret_key = ".."

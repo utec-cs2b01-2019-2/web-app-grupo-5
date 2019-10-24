@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
-</head>
-<body>
+        <link rel="stylesheet" type="text/css" href="/static/css/CreateUser.css">
+        <title>SignIn</title>
 
-</body>
+</head>
+    <body>
+    <div class="inner-screen">
+        <div class="form">
+            <h2 class="hola"> Create an Account </h2>
+            <form method="post" action="/users">
+                <input type="text" placeholder="Enter your username" name="username" />
+                <input type="text" placeholder="Enter your name" name="name" />
+                <input type="text" placeholder="Enter your fullname" name="fullname" />
+                <input type="password" placeholder="password" name="password" />
+                <input type="submit" value="Sign up" />
+            </form>
+        </div>
+    </div>
+    </body>
 </html>
