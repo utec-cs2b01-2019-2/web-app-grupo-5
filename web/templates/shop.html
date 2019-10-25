@@ -157,88 +157,12 @@ label {
   background-color: #494;
 }
 
-@media screen and (max-width: 650px) {
-  .shopping-cart {
-    margin: 0;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-  }
-
-  .column-labels {
-    display: none;
-  }
-
-  .product-image {
-    float: right;
-    width: auto;
-  }
-  .product-image img {
-    margin: 0 0 10px 10px;
-  }
-
-  .product-details {
-    float: none;
-    margin-bottom: 10px;
-    width: auto;
-  }
-
-  .product-price {
-    clear: both;
-    width: 70px;
-  }
-
-  .product-quantity {
-    width: 100px;
-  }
-  .product-quantity input {
-    margin-left: 20px;
-  }
-
-  .product-quantity:before {
-    content: 'x';
-  }
-
-  .product-removal {
-    width: auto;
-  }
-
-  .product-line-price {
-    float: right;
-    width: 70px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .product-removal {
-    float: right;
-  }
-
-  .product-line-price {
-    float: right;
-    clear: left;
-    width: auto;
-    margin-top: 10px;
-  }
-
-  .product .product-line-price:before {
-    content: 'Item Total: $';
-  }
-
-  .totals .totals-item label {
-    width: 60%;
-  }
-  .totals .totals-item .totals-value {
-    width: 40%;
-  }
-}
-
-
       </style>
   </head>
 <body>
 
 <div>
-<h1>Veterinaria</h1>
+<h1>Veterinarias</h1>
 
 </div>
 <br>
@@ -259,7 +183,7 @@ label {
       <p class="product-description">*Insertar descripción de veterinaria*</p>
     </div>
     <div class="product-removal">
-      <button class="remove-product">
+      <button type="button" class="remove-product" onclick="window.location.href = 'http://127.0.0.1:8000/login';">
         Tienda
       </button>
       </div>
@@ -274,7 +198,22 @@ label {
       <p class="product-description">*Insertar descripción de veterinaria*</p>
     </div>
     <div class="product-removal">
-      <button class="remove-product">
+      <button type="button" class="remove-product" onclick="window.location.href = 'http://127.0.0.1:8000/login';">
+        Tienda
+      </button>
+      </div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="/static/images/Pancho_Cavero.png"/>
+    </div>
+    <div class="product-details">
+      <div class="product-title">Clínica Veterinaria Pancho Cavero</div>
+      <p class="product-description">*Insertar descripción de veterinaria*</p>
+    </div>
+    <div class="product-removal">
+      <button type="button" class="remove-product" onclick="window.location.href = 'http://127.0.0.1:8000/login';">
         Tienda
       </button>
       </div>
