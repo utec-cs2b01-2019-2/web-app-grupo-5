@@ -1,0 +1,12 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.info{
+  width: 240px;
+  height: 100px;
+  background: #edeff1;
+  margin: 0px;
+  padding-top: 20px;
+}
