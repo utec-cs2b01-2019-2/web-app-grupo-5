@@ -4,7 +4,6 @@ from model import entities
 import datetime
 import json
 import time
-import gunicorn
 
 db = connector.Manager()
 engine = db.createEngine()
@@ -53,7 +52,7 @@ def static_content(content):
 
 @app.route('/users', methods = ['POST'])
 def create_user():
-    c =  json.loads(request.form['values'])
+    c = json.loads(request.form['values'])
     user = entities.User(
         username=c['username'],
         name=c['name'],
@@ -65,14 +64,30 @@ def create_user():
     session.commit()
     return 'Created User'
 
+@app.route('/users2', methods = ['POST'])
+def create_user2():
+    print(request.form)
+    c = (request.form)
+    user = entities.User(
+        username=c['username'],
+        name=c['name'],
+        fullname=c['fullname'],
+        password=c['password']
+    )
+    session = db.getSession(engine)
+    session.add(user)
+    session.commit()
+    return 'Created User'
+
+
 @app.route("/register", methods =["GET"])
-def  register_user2():
-    return render_template("register.html " )
+def register_user2():
+    return render_template("register.html")
 
 
 
 @app.route("/register", methods =["POST"])
-def  register_user():
+def register_user():
     c = json.loads(request.form["value"])
     user = entities.User(
         username=c["username"],
@@ -80,7 +95,7 @@ def  register_user():
         fullname=c["full name"],
         password=c["password"]
     )
-    session = db.getSessin(engine)
+    session = db.getSession(engine)
     session.add(user)
     session.comit()
     return render_template("register.html")
@@ -146,10 +161,10 @@ def authenticate():
     ).first()
 
     if user != None:
-        session ["usuario"] = username;
+        session ["usuario"] = username
         return render_template('shop.html')
     else:
-        return render_template('index.html')
+        return render_template('login.html')
 
 @app.route('/current', methods = ['GET'])
 def current_user():
@@ -160,7 +175,7 @@ def current_user():
 @app.route('/logout', methods = ['GET'])
 def logout():
     session.clear()
-    return render_template('login.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.secret_key = ".."
