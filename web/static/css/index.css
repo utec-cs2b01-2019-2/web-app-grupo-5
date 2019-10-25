@@ -1,0 +1,82 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #D40A42;
+}
+
+.inner-screen{
+  position:relative;
+  left: 100px;
+  width: 0px;
+  height: 0px;
+  background: #D40A42;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.erizo{
+  position:relative;
+  left: 100px;
+  width: 0px;
+  height: 0px;
+  margin: 0px ;
+  padding-top: 80px;
+}
+
+.tienda{
+  position:relative;
+  left: 90px;
+  bottom: 0px;
+  width: 0px;
+  height: 0px;
+  background: #D40A42;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.form{
+  position:relative;
+  left: 0px;
+  bottom: 0px;
+  width: 240px;
+  height: 40px;
+  background: #edeff1;
+  margin: 0px auto;
+  padding-top: 20px;
+  border-radius: 30px;
+}
+
+.form2{
+  position:relative;
+  left: 600px;
+  bottom: -40px;
+  width: 300px;
+  height: 240px;
+  background: #edeff1;
+  margin: 0px;
+  padding-top: 20px;
+  border-radius: 30px;
+}
+
+.floro{
+  margin: 10px;
+  font-size:26px;
+}
+
+
+a{
+  background: #D40A42;
+  width: 300px;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 0px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+a:hover{
+  background: #b00938
+}

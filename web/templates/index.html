@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Chat</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/libs/bootstrap.min.js" ></script>
-
-</head>
-<body>
-    <div align="center" width="80%">
-        <div class="alert alert-primary" role="alert">
-          CS2B01 - Plataform-Based Development
-        </div>
-        <img src="/static/images/cs.png"/>
-        <div class="alert alert-primary" role="alert">
-            Code --- Name
-        </div>
-        <br/>
+<html>
+  <head>
+      <link rel="stylesheet" href="/static/css/styles.css">
+      <meta charset="UTF-8">
+      <title>Home</title>
+  </head>
+  <body>
+  <div class="inner-screen">
+    <div class="form">
+      <form method= "post" action="/authenticate">
+          <a href="/login">Login</a>
+          <a href="/register">Register</a>
+      </form>
     </div>
-</body>
+  </div>
+  <div class="erizo">
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-YYL6yocBw9WYw127xp5Qs5UD3Lnp5sJnDtya7kmU40IyHJcG>
+  </div>
+  <div class="form2">
+    <div class="floro">Los erizos más bonitos del Perú a su disposición ahora. Visite nuestras tienda.</div>
+    <div class="tienda">
+      <a href="/shop">Tiendas</a>
+    </div>
+  </div>
+  </body>
 </html>
