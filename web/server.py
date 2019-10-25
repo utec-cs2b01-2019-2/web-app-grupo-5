@@ -148,7 +148,7 @@ def authenticate():
         session ["usuario"] = username;
         return render_template('shop.html')
     else:
-        return render_template('login.html')
+        return render_template('index.html')
 
 @app.route('/current', methods = ['GET'])
 def current_user():
