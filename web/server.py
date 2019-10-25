@@ -22,6 +22,18 @@ def login():
 def shop():
     return render_template('shop.html')
 
+@app.route('/mapita')
+def mapita():
+    return render_template('mapita.html')
+
+@app.route('/mapa2')
+def mapa2():
+    return render_template('mapa2.html')
+
+@app.route('/mapa3')
+def mapa3():
+    return render_template('mapa3.html')
+
 @app.route('/static/<content>')
 def static_content(content):
     return render_template(content)
