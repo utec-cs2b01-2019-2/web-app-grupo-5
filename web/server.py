@@ -145,7 +145,7 @@ def authenticate():
     ).first()
 
     if user != None:
-        session ["usuario"] = username;
+        session ["usuario"] = username
         return render_template('shop.html')
     else:
         return render_template('login.html')
@@ -159,7 +159,7 @@ def current_user():
 @app.route('/logout', methods = ['GET'])
 def logout():
     session.clear()
-    return render_template('login.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.secret_key = ".."
