@@ -4,7 +4,6 @@ from model import entities
 import datetime
 import json
 import time
-import gunicorn
 
 db = connector.Manager()
 engine = db.createEngine()
