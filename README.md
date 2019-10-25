@@ -1,7 +1,7 @@
 # Nombre del grupo
-
+Erizos Bonitos
 ## Breve descrición del proyecto
-
+Proyecto encargado de la localizacion de veterinarias cercanas a la universidad UTEC
 ## Integrantes
 
 |   | No. Alumno | Apellidos | Nombre | Usuario Github | % participación |
