@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16051b00-6d4f-42dd-a100-f5cc678983a2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/static/images/Groomers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/Veterinaria_Surco.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/css/styles2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/shop.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558536507359</updated>
-      <workItem from="1571981068481" duration="2341000" />
+      <workItem from="1571981068481" duration="3263000" />
     </task>
     <servers />
   </component>
@@ -126,6 +127,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/web_app_grupo_5$server.coverage" NAME="server Coverage Results" MODIFIED="1571983342743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
+    <SUITE FILE_PATH="coverage/web_app_grupo_5$server.coverage" NAME="server Coverage Results" MODIFIED="1571983740698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
   </component>
 </project>
